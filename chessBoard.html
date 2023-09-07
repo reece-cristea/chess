@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Chess Engine</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="classes.js"></script>
+        <script src="scripts.js"></script>
+        <script src="menu.js"></script>
+        <script src="boardsetup.js"></script>
+        <script src="generator.js"></script>
+        <script src="visuals.js"></script>
+    </head>
+    <div class="dropdown">
+        <button onclick="player()" class="player">Play as:</button>
+        <div id="player" class="player-content">
+            <button onclick="whitePlayer1()" class="whitePlayer1">White</button>
+            <button onclick="blackPlayer1()" class="blackPlayer1">Black</button>
+        </div>
+        <button onclick="difficulty()" class="difficulty">Change Difficulty</button>
+        <div id="difficulty" class="difficulty-content">
+            <a>Easy Mode</a>
+            <a>Casual Mode</a>
+            <a>Hard Mode</a>
+        </div>
+        <button onclick="pieceSet()" id="pieceStyle" class="pieceSet" value="standardSet">Select Piece Set</button>
+        <div id="pieceSet" class="pieceSet-content">
+            <button onclick="standardSet()" class="standardSet">Standard</button>
+            <button onclick="fantasySet()" class="fantasySet">Fantasy</button>
+            <button onclick="chrisSet()" class="chrisSet">Chris</button>
+        </div>
+        <button type="button" class="reset" onclick="setNewBoard()">Reset Board</button>
+    </div>
+    <div class="header">
+        <h1>Welcome to Chress!</h1>
+    </div>
+    <body>
+        <div class="mainDiv">
+            <div id="whiteCaptured">
+                <div id="whitePieces">
+                </div>
+            </div>
+            <div class="boardStyle">
+            <table id="board">
+            </table>
+            </div>
+            <div id="blackCaptured">
+                <div id="blackPieces">
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer">
+
+        </div>
+    </body>
+</html>
